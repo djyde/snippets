@@ -1,0 +1,71 @@
+{
+  "csl": {
+    "scope": "javascript,typescript",
+    "description": "console.log",
+    "body": [
+      "console.log($0)"
+    ],
+    "prefix": "csl"
+  },
+  "fc": {
+    "scope": "javascript,typescript,typescriptreact",
+    "description": "React Function Component",
+    "body": [
+      "function ${componentName} () {",
+      "  return (",
+      "    <>",
+      "    </>",
+      "  )",
+      "}",
+      "",
+      "export default ${componentName}"
+    ],
+    "prefix": "fc"
+  },
+  "hapi:route": {
+    "scope": "typescript,javascript",
+    "description": "hapi route",
+    "body": [
+      "server.route({",
+      "  path: '$1',",
+      "  method: '${2|GET,POST,PUT,DELETE|}',",
+      "  async handler(req, h) {",
+      "    $0",
+      "  }",
+      "})"
+    ],
+    "prefix": "hapi:route"
+  },
+  "impr": {
+    "scope": "javascript,typescript",
+    "description": "import react",
+    "body": [
+      "import * as React from 'react'"
+    ],
+    "prefix": "impr"
+  },
+  "next:init": {
+    "scope": "javascript,typescript,typescriptreact",
+    "description": "import react",
+    "body": [
+      "function ${pageName} {",
+      "  return (",
+      "    <>",
+      "    </>",
+      "  )",
+      "}",
+      "",
+      "export async function getServerSideProps(ctx) {",
+      "  return {",
+      "    props: {",
+      "",
+      "    }",
+      "  }",
+      "}",
+      "",
+      "export default ${pageName}"
+    ],
+    "prefix": "next:init"
+  }
+}
+

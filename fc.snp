@@ -1,0 +1,13 @@
+---
+scope: javascript,typescript,typescriptreact
+description: React Function Component
+---
+
+function ${componentName} () {
+  return (
+    <>
+    </>
+  )
+}
+
+export default ${componentName}

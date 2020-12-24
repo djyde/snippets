@@ -1,0 +1,12 @@
+---
+scope: typescript,javascript
+description: hapi route
+---
+
+server.route({
+  path: '$1',
+  method: '${2|GET,POST,PUT,DELETE|}',
+  async handler(req, h) {
+    $0
+  }
+})

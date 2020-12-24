@@ -1,0 +1,6 @@
+---
+scope: javascript,typescript
+description: console.log
+---
+
+console.log($0)

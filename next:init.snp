@@ -1,0 +1,21 @@
+---
+scope: javascript,typescript,typescriptreact
+description: import react
+---
+
+function ${pageName} {
+  return (
+    <>
+    </>
+  )
+}
+
+export async function getServerSideProps(ctx) {
+  return {
+    props: {
+
+    }
+  }
+}
+
+export default ${pageName}

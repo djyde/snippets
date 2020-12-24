@@ -1,0 +1,6 @@
+---
+scope: javascript,typescript
+description: import react
+---
+
+import * as React from 'react'
