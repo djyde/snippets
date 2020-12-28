@@ -3,7 +3,7 @@ scope: javascript,typescript,typescriptreact
 description: import react
 ---
 
-function ${pageName} {
+function ${pageName}() {
   return (
     <>
     </>
