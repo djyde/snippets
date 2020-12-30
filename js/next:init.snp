@@ -3,9 +3,10 @@ scope: javascript,typescript,typescriptreact
 description: import react
 ---
 
-function ${pageName}() {
+function ${1:pageName}() {
   return (
     <>
+      $2
     </>
   )
 }
@@ -13,9 +14,9 @@ function ${pageName}() {
 export async function getServerSideProps(ctx) {
   return {
     props: {
-
+      
     }
   }
 }
 
-export default ${pageName}
+export default ${1}

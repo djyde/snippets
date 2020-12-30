@@ -1,0 +1,25 @@
+---
+scope: yaml
+---
+
+image: node:12.16.1
+
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - npm config set @huyafed:registry https://nexus.huya.com/repository/npm-public/
+  - npm i
+
+pages:
+  tags: 
+    - pages
+  stage: deploy
+  script:
+    - npm run doc
+  artifacts:
+    paths:
+      - public
+  only:
+    - master

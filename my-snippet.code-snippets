@@ -1,6 +1,6 @@
 {
   "csl": {
-    "scope": "javascript,typescript",
+    "scope": "javascript,typescript,typescriptreact",
     "description": "console.log",
     "body": [
       "console.log($0)"
@@ -14,6 +14,7 @@
       "function ${componentName} () {",
       "  return (",
       "    <>",
+      "      $0",
       "    </>",
       "  )",
       "}",
@@ -21,6 +22,34 @@
       "export default ${componentName}"
     ],
     "prefix": "fc"
+  },
+  "gitlab-pages": {
+    "scope": "yaml",
+    "description": "",
+    "body": [
+      "image: node:12.16.1",
+      "",
+      "cache:",
+      "  paths:",
+      "    - node_modules/",
+      "",
+      "before_script:",
+      "  - npm config set @huyafed:registry https://nexus.huya.com/repository/npm-public/",
+      "  - npm i",
+      "",
+      "pages:",
+      "  tags: ",
+      "    - pages",
+      "  stage: deploy",
+      "  script:",
+      "    - npm run doc",
+      "  artifacts:",
+      "    paths:",
+      "      - public",
+      "  only:",
+      "    - master"
+    ],
+    "prefix": "gitlab-pages"
   },
   "hapi:route": {
     "scope": "typescript,javascript",
@@ -36,8 +65,18 @@
     ],
     "prefix": "hapi:route"
   },
+  "iife": {
+    "scope": "typescript,javascript,typescriptreact",
+    "description": "",
+    "body": [
+      ";(() => {",
+      "  $0",
+      "})()"
+    ],
+    "prefix": "iife"
+  },
   "impr": {
-    "scope": "javascript,typescript",
+    "scope": "javascript,typescript,typescriptreact",
     "description": "import react",
     "body": [
       "import * as React from 'react'"
@@ -48,7 +87,7 @@
     "scope": "javascript,typescript,typescriptreact",
     "description": "import react",
     "body": [
-      "function ${pageName} {",
+      "function ${pageName}() {",
       "  return (",
       "    <>",
       "    </>",
@@ -66,6 +105,14 @@
       "export default ${pageName}"
     ],
     "prefix": "next:init"
+  },
+  "ust": {
+    "scope": "javascript,typescript,typescriptreact",
+    "description": "useState",
+    "body": [
+      "const [ $2, $3 ] = React.useState($1)$0"
+    ],
+    "prefix": "ust"
   }
 }
 
