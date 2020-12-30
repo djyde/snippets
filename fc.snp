@@ -6,6 +6,7 @@ description: React Function Component
 function ${componentName} () {
   return (
     <>
+      $0
     </>
   )
 }

@@ -1,0 +1,6 @@
+---
+scope: javascript,typescript,typescriptreact
+description: useState
+---
+
+const [ $2, $3 ] = React.useState($1)$0
