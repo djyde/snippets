@@ -1,0 +1,6 @@
+---
+scope: markdown
+description: huya npm badge
+---
+
+[![${1:package}](http://shields.huya.info/npm/v/$1?registry_uri=https://nexus.huya.com/repository/npm-public)](https://npmjs.huya.info/package/$1)

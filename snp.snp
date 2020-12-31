@@ -1,0 +1,11 @@
+---
+scope: plaintext
+description: snp sytax
+---
+
+---
+scope: $1
+description: $2
+---
+
+$0
