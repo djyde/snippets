@@ -1,0 +1,10 @@
+---
+scope: javascript,typescript,typescriptreact
+description: Next.js API handler
+---
+
+import { NextApiRequest, NextApiResponse } from "next";
+
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
+  $0
+}
