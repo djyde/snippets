@@ -1,0 +1,6 @@
+---
+scope: javascript,typescript,typescriptreact
+description: Require
+---
+
+const $1 = require('$1')$0

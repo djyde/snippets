@@ -1,6 +1,6 @@
 ---
 scope: javascript,typescript,typescriptreact
-description: import react
+description: Next.js Page
 ---
 
 function ${1:pageName}() {
